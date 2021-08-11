@@ -2,7 +2,7 @@ from os import path
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
-from automation.pages.main_page.locators import main_page_main_locators
+from automation.pages.main_page_locators import main_page_main_locators
 
 chrome_options = Options()
 # chrome_options.add_argument("--headless")

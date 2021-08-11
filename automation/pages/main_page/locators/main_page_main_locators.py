@@ -1,19 +1,4 @@
-from os import path
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-import time
 from selenium.webdriver.common.by import By
-
-
-chrome_options = Options()
-# chrome_options.add_argument("--headless")
-
-driver = webdriver.Chrome(
-    "C:\\Users\DawidJagoda\Desktop\python + Zyia\chromedriver.exe",
-    chrome_options=chrome_options,
-)
-driver.get("http://automationpractice.com/index.php")
-time.sleep(3)  # waiting to all page has been loaded
 
 
 CONTACT_US = driver.find_element_by_id("contact-link")
